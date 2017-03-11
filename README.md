@@ -1,14 +1,4 @@
-# ML API
-
-## Roadmap
-* [x] Limit requests access per ip address
-* [x] Limit requests access per token
-* [x] Filter by query
-* [ ] Allow customer post a image url and return the result of predictions
-* [ ] Filter by customer's image
-
-## Architecture Diagram
-![Machine Learning Service Application Architecture](https://c7.staticflickr.com/6/5467/30326223422_fb15e3c2c8_b.jpg)
+# DeepDetect Client Rails Example
 
 ## Requirements
 - Ubuntu 14.04 or Ubuntu 16.04
@@ -90,6 +80,9 @@ bundler exec puma -C config/puma.rb -e production -d
 ```
 curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'Authorization: Token token=TtDKqIuz50GyNpl7z8tMtQtt' -d 'image_url=https%3A%2F%2Fscontent.fsgn1-1.fna.fbcdn.net%2Fv%2Ft1.0-9%2F1239414_10201956642662189_587041755_n.jpg%3Foh%3D9e9be2c2b9318abac66abde163a88399%26oe%3D592CF192&model=person_yes_no' 'http://127.0.0.1:3000/v1/predict.json'
 ```
+
+## Architecture Diagram
+![Machine Learning Service Application Architecture](https://c7.staticflickr.com/6/5467/30326223422_fb15e3c2c8_b.jpg)
 
 ## Contributing
 ML API is designed and implemented by Tam Nguyen [ntamvl@gmail.com](ntamvl@gmail.com)
