@@ -41,6 +41,20 @@ Running DeepDetect HTTP server on localhost:8080
 
 Read more at https://github.com/beniz/deepdetect
 
+**Clone models that are trained by me:**
+```
+cd && mkdir Models
+wget http://ntam.me/downloads/person_yes_no.tar.gz
+```
+
+Type cmd `pwd` at folder Models to get absolute path
+Example with my absolute path model
+```
+/home/tamnguyen/Models
+```
+
+I will upload more models when I have free time :P :D
+
 ## How to run
 ```
 git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
@@ -48,6 +62,12 @@ bundle install
 
 # edit config/database.yml then run
 rails db:create && rails db:migrate && rails db:seed
+
+# edit deepdetect config at config/deepdetect.json
+# update model_path like this
+{
+  "model_path": "/home/tamnguyen/Models"
+}
 
 # run on development
 rails s -b 0.0.0.0
