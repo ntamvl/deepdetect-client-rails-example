@@ -12,7 +12,7 @@
 
 ## How to run
 ```
-git clone git@github.com:feels/deepdetect-client.git && cd filter_api
+git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
 bundle install
 
 # run on development
