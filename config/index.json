@@ -1,0 +1,8 @@
+{
+  "production": {
+    "name": "pixai_production"
+  },
+  "development": {
+    "name": "pixai_beta"
+  }
+}

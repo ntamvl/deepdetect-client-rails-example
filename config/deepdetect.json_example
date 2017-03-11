@@ -1,0 +1,83 @@
+{
+  "model_path": "/home/ubuntu/projects/deepdetect/models",
+  "models": {
+    "person_yes_no": {
+      "root": true,
+      "precision": 0.7,
+      "categories": ["someone", "noone"],
+      "option_chain": {
+        "someone": ["selfie", "badres", "poorlighting", "more_than_one", "gender"],
+        "noone": ["makeup", "footwear", "watches", "flatlay", "zappos_boxes"]
+      }
+    },
+    "selfie": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["selfie", "no_selfie"],
+      "option_chain": {
+        "selfie": ["mirrorshot"],
+        "no_selfie": []
+      }
+    },
+    "mirrorshot": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["mirrorshot", "no_mirrorshot"],
+      "option_chain": {}
+    },
+    "badres": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["bad_resolution", "normal_resolution"],
+      "option_chain": {}
+    },
+    "poorlighting": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["poor_lighting", "normal_lighting"],
+      "option_chain": {}
+    },
+    "more_than_one": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["more_than_one", "less_than_one"],
+      "option_chain": {}
+    },
+    "gender": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["men", "women"],
+      "option_chain": {}
+    },
+    "makeup": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["makeup", "no_makeup"],
+      "option_chain": {}
+    },
+    "footwear": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["footwear", "no_footwear"],
+      "option_chain": {}
+    },
+    "watches": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["watches", "no_watches"],
+      "option_chain": {}
+    },
+    "flatlay": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["flatlay", "no_flatlay"],
+      "option_chain": {}
+    },
+    "zappos_boxes": {
+      "root": false,
+      "precision": 0.7,
+      "categories": ["zappos_boxes", "no_zappos_boxes"],
+      "option_chain": {}
+    }
+  }
+}
