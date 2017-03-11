@@ -14,11 +14,17 @@
 ```
 git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
 bundle install
+```
 
-# run on development
+**edit `config/database.yml` then run**
+```
+rails db:create && rails db:migrate && rails db:seed
+```
+
+## run on development
 rails s -b 0.0.0.0
 
-# run on production as daemonize
+## run on production as daemonize
 bundler exec puma -C config/puma.rb -e production -d
 ```
 
