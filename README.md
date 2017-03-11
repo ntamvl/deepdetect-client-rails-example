@@ -78,47 +78,6 @@ bundler exec puma -C config/puma.rb -e production -d
 ```
 
 ## Usage
-**Filter by simple query***
-- Endpoint: `POST /v1/filter`
-- Params: JSON formatted body
-- Structure of params:
-```
-{
-  "query": {
-    "hashtags": <array of string (optional)>
-    "and": <array of model's category, default: ["no_selfie"]>,
-    "or": <array of model's category, default: []>,
-    "not": <array of model's category, default: []>
-  },
-  "pagination": {
-    "from": <integer (default: 0)>,
-    "size": <integer (default: 10)>
-  }
-}
-```
-- Params example:
-```
-{
-  "query": {
-    "and": ["someone", "no_selfie"],
-    "or": ["men", "women"],
-    "not": []
-  },
-  "pagination": {
-    "from": 0,
-    "size": 10
-  }
-}
-```
-
-**Auto filter for ASOS with hashtag asos or asseeonme**
-- Endpoint: `POST /v1/filter_auto_asos`
-- Header:
-  - Authorization: Authentication token
-- Params:
-  - from: integer, default: 0, pagination with offset
-  - size: integer, default: 20, pagination with limit
-
 **Predict an image by model**
 - Endpoint: `POST /v1/predict`
 - Header:
@@ -127,37 +86,9 @@ bundler exec puma -C config/puma.rb -e production -d
   - image_url: string, required
   - model: string, required
 
-## How to demo
+## How to use
 ```
-curl -H "Authorization: Token token=XpDtuHtCQfgQf4RZnf85Nwtt" -H "Content-Type: application/json" http://localhost:3000/v1/filter -d '
-{
-  "query": {
-    "hashtags": ["asos", "hype"],
-    "and": ["someone", "no_selfie"],
-    "or": ["men", "women"],
-    "not": ["selfie"]
-  },
-  "pagination": {
-    "from": 0,
-    "size": 20
-  }
-}'
-```
-or on staging
-```
-curl -H "Authorization: Token token=TtDKqIuz50GyNpl7z8tMtQtt" -H "Content-Type: application/json" http://staging.feels.com:8081/v1/filter -d '
-{
-  "query": {
-    "hashtags": ["asos", "hype"],
-    "and": ["someone", "no_selfie"],
-    "or": ["men", "women"],
-    "not": ["selfie"]
-  },
-  "pagination": {
-    "from": 0,
-    "size": 20
-  }
-}'
+curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'Authorization: Token token=TtDKqIuz50GyNpl7z8tMtQtt' -d 'image_url=https%3A%2F%2Fscontent.fsgn1-1.fna.fbcdn.net%2Fv%2Ft1.0-9%2F1239414_10201956642662189_587041755_n.jpg%3Foh%3D9e9be2c2b9318abac66abde163a88399%26oe%3D592CF192&model=person_yes_no' 'http://127.0.0.1:3000/v1/predict.json'
 ```
 
 ## How to use API docs
