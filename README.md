@@ -79,6 +79,11 @@ bundler exec puma -C config/puma.rb -e production -d
 curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'Authorization: Token token=TtDKqIuz50GyNpl7z8tMtQtt' -d 'image_url=https%3A%2F%2Fscontent.fsgn1-1.fna.fbcdn.net%2Fv%2Ft1.0-9%2F1239414_10201956642662189_587041755_n.jpg%3Foh%3D9e9be2c2b9318abac66abde163a88399%26oe%3D592CF192&model=person_yes_no' 'http://127.0.0.1:3000/v1/predict.json'
 ```
 
+OR use API docs at `http://localhost:3000/docs`
+
+![Example result](https://raw.githubusercontent.com/ntamvl/deepdetect-client-rails-example/master/example_result.png)
+
+
 ## Architecture Diagram
 ![Machine Learning Service Application Architecture](https://c7.staticflickr.com/6/5467/30326223422_fb15e3c2c8_b.jpg)
 
