@@ -88,7 +88,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/ntamvl
 
 > I will upload more models when I have free time :D :P
 
-> you can get more models at http://ntam.me
+> you can get more models at http://ntam.me/downloads/
 
 ## License
 MIT
