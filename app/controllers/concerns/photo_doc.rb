@@ -14,7 +14,7 @@ module PhotoDoc
     swagger_api :predict do
       summary "Predict a image by Deep Learning"
       notes "Predict a image by Deep Learning"
-      param :form, :image_url, :string, :required, "Image URL", defaultValue: "https://feels.imgix.net/instagram/asos/1364452047479251275_3879530.jpg?w=530&h=530&dpr=2&fit=crop&crop=faces,top&trimtol=10&trim=color"
+      param :form, :image_url, :string, :required, "Image URL", defaultValue: "https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-0/p206x206/1239414_10201956642662189_587041755_n.jpg?oh=86c59e31efc46ff627a142b6fbc20763&oe=59659D71"
       param :form, :model, :string, :required, "Model for prediction. Available models: [mirrorshot, gender, badres, poorlighting, selfie, footwear, more_than_one, person_yes_no, zappos_boxes]", defaultValue: "person_yes_no"
     end
 
