@@ -30,6 +30,17 @@ cmake ..
 make
 ```
 
+**Start the server:**
+```
+cd build/main
+./dede
+
+DeepDetect [ commit 73d4e638498d51254862572fe577a21ab8de2ef1 ]
+Running DeepDetect HTTP server on localhost:8080
+```
+
+Read more at https://github.com/beniz/deepdetect
+
 ## How to run
 ```
 git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
