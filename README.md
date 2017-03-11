@@ -4,6 +4,7 @@
 - Ubuntu 14.04 or Ubuntu 16.04
 - Rails 5+
 - Ruby 2.2+
+- Redis
 
 ## Install DeepDetect
 **Install dependencies:**
