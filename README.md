@@ -44,8 +44,6 @@ Example with my absolute path model
 /home/tamnguyen/Models
 ```
 
-I will upload more models when I have free time :P :D
-
 ## How to run
 ```
 git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
@@ -87,6 +85,9 @@ curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header
 ## Contributing
 ML API is designed and implemented by Tam Nguyen [ntamvl@gmail.com](ntamvl@gmail.com)
 Bug reports and pull requests are welcome on GitHub at https://github.com/ntamvl/deepdetect-client-rails-example
+
+> I will upload more models when I have free time :D :P
+> you can get more models at http://ntam.me
 
 ## License
 MIT
