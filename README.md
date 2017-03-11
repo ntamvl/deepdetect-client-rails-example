@@ -48,6 +48,7 @@ wget http://ntam.me/downloads/person_yes_no.tar.gz
 ```
 
 Type cmd `pwd` at folder Models to get absolute path
+
 Example with my absolute path model
 ```
 /home/tamnguyen/Models

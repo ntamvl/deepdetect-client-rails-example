@@ -39,16 +39,15 @@ module FilterApi
     config.middleware.use Rack::Attack
 
     # begin load DeepDetect config
-    ENV["dede"] = "http://xdev-web:8080"
     config_file_path = "#{Rails.root}/config/deepdetect.json"
     model_hash = JSON.parse(File.read(config_file_path))
     model_path = model_hash["model_path"]
     DeepdetectRuby.configure do |config|
-      config.host = ENV["dede"] || "http://127.0.0.1:8080"
+      config.host = "http://xdev-web:8080"
       config.model_path = "#{model_path}"
       config.debug = true
-      config.is_scaling = false
-      config.servers = "http://127.0.0.1:8080, http://staging.feels.com:8080"
+      config.is_scaling = false # is_scaling is false ML uses host AND true ML uses servers
+      config.servers = "http://127.0.0.1:8080, http://ml1.ntam.me:8080"
     end
     # end load DeepDetect config
 
