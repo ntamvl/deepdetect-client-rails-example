@@ -14,7 +14,6 @@
 ```
 git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
 bundle install
-```
 
 **edit `config/database.yml` then run**
 ```
