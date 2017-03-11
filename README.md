@@ -10,6 +10,26 @@
 ## Architecture Diagram
 ![Machine Learning Service Application Architecture](https://c7.staticflickr.com/6/5467/30326223422_fb15e3c2c8_b.jpg)
 
+## Requirements
+- Ubuntu 14.04 or Ubuntu 16.04
+- Rails 5+
+- Ruby 2.2+
+
+## Install DeepDetect
+**Install dependencies:**
+```
+sudo apt-get install build-essential libgoogle-glog-dev libgflags-dev libeigen3-dev libopencv-dev libcppnetlib-dev libboost-dev libboost-iostreams-dev libcurlpp-dev libcurl4-openssl-dev protobuf-compiler libopenblas-dev libhdf5-dev libprotobuf-dev libleveldb-dev libsnappy-dev liblmdb-dev libutfcpp-dev cmake libgoogle-perftools-dev unzip
+```
+
+**Clone & build deepdetect:**
+```
+cd && mkdir Projects && git clone git@github.com:beniz/deepdetect.git
+cd deepdetect && mkdir build
+cd build
+cmake ..
+make
+```
+
 ## How to run
 ```
 git clone git@github.com:ntamvl/deepdetect-client-rails-example.git
