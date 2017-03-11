@@ -35,6 +35,7 @@ Read more at https://github.com/beniz/deepdetect
 ```
 cd && mkdir Models
 wget http://ntam.me/downloads/person_yes_no.tar.gz
+tar xvf person_yes_no.tar.gz
 ```
 
 Type cmd `pwd` at folder Models to get absolute path
