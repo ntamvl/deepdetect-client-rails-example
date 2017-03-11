@@ -61,7 +61,7 @@
               "type": "string",
               "description": "Image URL",
               "required": true,
-              "defaultValue": "https://feels.imgix.net/instagram/asos/1364452047479251275_3879530.jpg?w=530&h=530&dpr=2&fit=crop&crop=faces,top&trimtol=10&trim=color"
+              "defaultValue": "https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/1239414_10201956642662189_587041755_n.jpg?oh=9e9be2c2b9318abac66abde163a88399&oe=592CF192"
             },
             {
               "paramType": "form",
