@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-u = User.create(name: "Tam Nguyen", email: "tam@feels.com", password: "123456", password_confirmation: "123456")
+u = User.create(name: "Tam Nguyen", email: "ntamvl@gmail.com", password: "123456", password_confirmation: "123456")
 u.update_columns(api_key: "TtDKqIuz50GyNpl7z8tMtQtt")

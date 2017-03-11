@@ -108,7 +108,7 @@ curl -H "Authorization: Token token=TtDKqIuz50GyNpl7z8tMtQtt" -H "Content-Type: 
 ## How to use API docs
 **Create a new user:**
 ```
-u = User.create(name: "Tam Nguyen", email: "tam@feels.com", password: "123456", password_confirmation: "123456")
+u = User.create(name: "Tam Nguyen", email: "ntamvl@gmail.com", password: "123456", password_confirmation: "123456")
 u.update_columns(api_key: "TtDKqIuz50GyNpl7z8tMtQtt")
 ```
 
