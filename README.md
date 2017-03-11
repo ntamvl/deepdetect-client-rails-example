@@ -91,25 +91,6 @@ bundler exec puma -C config/puma.rb -e production -d
 curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' --header 'Authorization: Token token=TtDKqIuz50GyNpl7z8tMtQtt' -d 'image_url=https%3A%2F%2Fscontent.fsgn1-1.fna.fbcdn.net%2Fv%2Ft1.0-9%2F1239414_10201956642662189_587041755_n.jpg%3Foh%3D9e9be2c2b9318abac66abde163a88399%26oe%3D592CF192&model=person_yes_no' 'http://127.0.0.1:3000/v1/predict.json'
 ```
 
-## How to use API docs
-**Create a new user:**
-```
-u = User.create(name: "Tam Nguyen", email: "ntamvl@gmail.com", password: "123456", password_confirmation: "123456")
-u.update_columns(api_key: "TtDKqIuz50GyNpl7z8tMtQtt")
-```
-
-**Access `http://localhost:3000/docs`**
-
-**Example with endpoint `POST /v1/filter.json`:**
-*Use token*
-```
-Token token=TtDKqIuz50GyNpl7z8tMtQtt
-```
-*With json body*
-```
-{"query": {"and": ["someone", "no_selfie"], "or": ["men", "women"], "not": ["selfie"] }, "pagination": {"from": 0, "size": 20 } }
-```
-
 ## Contributing
 ML API is designed and implemented by Tam Nguyen [ntamvl@gmail.com](ntamvl@gmail.com)
 Bug reports and pull requests are welcome on GitHub at https://github.com/ntamvl/deepdetect-client-rails-example
