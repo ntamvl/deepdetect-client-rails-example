@@ -112,7 +112,7 @@ u = User.create(name: "Tam Nguyen", email: "tam@feels.com", password: "123456", 
 u.update_columns(api_key: "TtDKqIuz50GyNpl7z8tMtQtt")
 ```
 
-**Access `http://staging.feels.com:8081/docs`**
+**Access `http://localhost:3000/docs`**
 
 **Example with endpoint `POST /v1/filter.json`:**
 *Use token*
@@ -125,8 +125,8 @@ Token token=TtDKqIuz50GyNpl7z8tMtQtt
 ```
 
 ## Contributing
-ML API is designed and implemented by Tam Nguyen [tam@feels.com](tam@feels.com) or [ntamvl@gmail.com](ntamvl@gmail.com)
-Bug reports and pull requests are welcome on GitHub at https://github.com/feels/deepdetect-client/tree/master/filter_api.
+ML API is designed and implemented by Tam Nguyen [ntamvl@gmail.com](ntamvl@gmail.com)
+Bug reports and pull requests are welcome on GitHub at https://github.com/ntamvl/deepdetect-client-rails-example
 
 ## License
-The gem is available as private repository under the terms of the Feels License
+MIT
