@@ -87,6 +87,7 @@ ML API is designed and implemented by Tam Nguyen [ntamvl@gmail.com](ntamvl@gmail
 Bug reports and pull requests are welcome on GitHub at https://github.com/ntamvl/deepdetect-client-rails-example
 
 > I will upload more models when I have free time :D :P
+
 > you can get more models at http://ntam.me
 
 ## License
